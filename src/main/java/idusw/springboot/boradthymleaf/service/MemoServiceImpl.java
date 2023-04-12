@@ -60,7 +60,7 @@ public class MemoServiceImpl implements MemoService {
     public List<Memo> initialize() {
         // 테이블 초기화 코드
         IntStream.rangeClosed(1, 10).forEach(i -> {
-            MemoEntity memo = MemoEntity.builder().memoText("egyou : " + i).build();
+            MemoEntity memo = MemoEntity.builder().memoText("csh : " + i).build();
             memoRepository.save(memo);
         });
         return readList();
