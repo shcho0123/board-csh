@@ -37,7 +37,7 @@ public class MemberController {
        else
             return "/main/error";
     }
-    @PostMapping("/logout")
+    @GetMapping("/logout")
     public String logoutMember() {
         session.invalidate();
         return "redirect:/";
